@@ -33,7 +33,7 @@ else
     fi
 fi
 
-export PKG_CONFIG_PATH="/home/runner/work/libmpv-linux-build/libmpv-linux-build/dep/linux_amd64/lib/pkgconfig"
+# export PKG_CONFIG_PATH="/home/runner/work/libmpv-linux-build/libmpv-linux-build/dep/linux_amd64/lib/pkgconfig"
 
 case "$PKG_CONFIG_PATH" in
   '')
