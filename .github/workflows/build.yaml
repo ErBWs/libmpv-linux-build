@@ -85,11 +85,10 @@ jobs:
         printf "%s\n" --enable-gpl >> ffmpeg_options
         printf "%s\n" --enable-libx264 >> ffmpeg_options
         printf "%s\n" --enable-libx265 >> ffmpeg_options
-        printf "%s\n" --extra-ldflags="-L/${GITHUB_WORKSPACE}/dep/linux_amd64/lib/libx264.a -static" >> ffmpeg_options
-        printf "%s\n" --extra-ldflags="-L/${GITHUB_WORKSPACE}/dep/linux_amd64/lib/libx265.a -static" >> ffmpeg_options
         printf "%s\n" --enable-libass >> ffmpeg_options
         printf "%s\n" --disable-gnutls >> ffmpeg_options
         printf "%s\n" --disable-sndio >> ffmpeg_options
+        printf "%s\n" --pkg-config-flags="--static" >> ffmpeg_options
         printf "%s\n" --disable-librubberband >> ffmpeg_options
         printf "%s\n" -Dlibmpv=true > mpv_options
 
