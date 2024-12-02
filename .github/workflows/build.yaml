@@ -87,7 +87,6 @@ jobs:
         printf "%s\n" --enable-libx265 >> ffmpeg_options
         printf "%s\n" --extra-cflags="-I${GITHUB_WORKSPACE}/dep/linux_amd64/include" >> ffmpeg_options
         printf "%s\n" --extra-ldflags="-L${GITHUB_WORKSPACE}/dep/linux_amd64/lib -static" >> ffmpeg_options
-        printf "%s\n" --enable-libass >> ffmpeg_options
         printf "%s\n" --disable-gnutls >> ffmpeg_options
         printf "%s\n" --disable-sndio >> ffmpeg_options
         printf "%s\n" --pkg-config-flags="--static" >> ffmpeg_options
